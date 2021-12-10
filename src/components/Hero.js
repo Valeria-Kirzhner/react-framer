@@ -16,7 +16,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  padding: 3rem calc((100vw - 1300px) / 2);
+  padding-top: 10%;
 
   @media screen and (max-width: 768px) {
     grid-grid-template-columns: 1fr;
@@ -51,7 +51,7 @@ const Button = styled(motion.button)`
   background: transparent;
   color: #fff;
 `;
-const Image = styled.img`
+const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -71,7 +71,7 @@ const ColumnRight = styled.div`
     left: 10px;
   }
   ${Image}:nth-child(2) {
-    top: 170px;
+    top: 100px;
     right: 10px;
   }
   ${Image}:nth-child(3) {
@@ -104,14 +104,48 @@ const Hero = () => {
           >
             Journey to the unknown
           </motion.p>
-          <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{
+              scale: 0.95,
+              backgroundColor: "#67F6E7",
+              border: "none",
+              color: "#000",
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1.5 } }}
+          >
             Get Started
           </Button>
         </ColumnLeft>
         <ColumnRight>
-          <Image src={PersonOne} alt="man" />
-          <Image src={PersonTwo} alt="man" />
-          <Image src={PersonThree} alt="man" />
+          <Image
+            src={PersonOne}
+            alt="man"
+            whileTap={{ scale: 0.9 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+          />
+          <Image
+            src={PersonTwo}
+            alt="man"
+            whileTap={{ scale: 0.6 }}
+            drag={true}
+            dragConstraints={{ left: 50, right: 0, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          />
+          <Image
+            src={PersonThree}
+            alt="man"
+            whileTap={{ scale: 0.8 }}
+            drag={true}
+            dragConstraints={{ left: 50, right: 0, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          />
         </ColumnRight>
       </Container>
     </Section>
