@@ -40,8 +40,8 @@ const ColumnLeft = styled.div`
     line-height: 1.1;
   }
 `;
-
-const Button = styled.div`
+//motion.button is adding button tag insude the Button component.
+const Button = styled(motion.button)`
   padding: 1rem 3rem;
   font-size: 1rem;
   border: 2px solid #fff;
@@ -49,6 +49,7 @@ const Button = styled.div`
   outline: none;
   cursor: pointer;
   background: transparent;
+  color: #fff;
 `;
 const Image = styled.img`
   position: absolute;
@@ -103,7 +104,9 @@ const Hero = () => {
           >
             Journey to the unknown
           </motion.p>
-          <Button>Get Started</Button>
+          <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            Get Started
+          </Button>
         </ColumnLeft>
         <ColumnRight>
           <Image src={PersonOne} alt="man" />
