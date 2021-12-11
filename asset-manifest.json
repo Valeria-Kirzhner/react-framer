@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-framer/static/css/main.a617e044.chunk.css",
+    "main.js": "/react-framer/static/js/main.e657ab19.chunk.js",
+    "main.js.map": "/react-framer/static/js/main.e657ab19.chunk.js.map",
+    "runtime-main.js": "/react-framer/static/js/runtime-main.9abb7bc6.js",
+    "runtime-main.js.map": "/react-framer/static/js/runtime-main.9abb7bc6.js.map",
+    "static/js/2.cfc262ea.chunk.js": "/react-framer/static/js/2.cfc262ea.chunk.js",
+    "static/js/2.cfc262ea.chunk.js.map": "/react-framer/static/js/2.cfc262ea.chunk.js.map",
+    "static/js/3.396042b9.chunk.js": "/react-framer/static/js/3.396042b9.chunk.js",
+    "static/js/3.396042b9.chunk.js.map": "/react-framer/static/js/3.396042b9.chunk.js.map",
+    "index.html": "/react-framer/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/react-framer/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.cfc262ea.chunk.js.LICENSE.txt": "/react-framer/static/js/2.cfc262ea.chunk.js.LICENSE.txt",
+    "static/media/boy.d236687b.svg": "/react-framer/static/media/boy.d236687b.svg",
+    "static/media/girl1.af726c81.svg": "/react-framer/static/media/girl1.af726c81.svg",
+    "static/media/girl2.8b808108.svg": "/react-framer/static/media/girl2.8b808108.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9abb7bc6.js",
+    "static/js/2.cfc262ea.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.e657ab19.chunk.js"
+  ]
+}
