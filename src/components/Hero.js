@@ -29,6 +29,7 @@ const ColumnLeft = styled.div`
   flex-content: center;
   align-items: flex-start;
   padding: 5rem 2 rem;
+  margin-left: 5px;
 
   h1 {
     margin-bottom: 0.5rem;
@@ -41,15 +42,18 @@ const ColumnLeft = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    margin-left: 5px;
     h1 {
+      padding-left: 7px;
       margin-bottom: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     p {
+      padding-top: 30px;
+      padding-bottom: 70px;
+      padding-left: 7px;
       margin: 2rem 0;
       font-size: 3rem;
-      line-height: 1.1;
+      line-height: 0.9;
     }
   }
 `;
@@ -63,6 +67,10 @@ const Button = styled(motion.button)`
   cursor: pointer;
   background: transparent;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 7px;
+  }
 `;
 const Image = styled(motion.img)`
   position: absolute;
@@ -107,7 +115,7 @@ const Hero = () => {
             animate={{ opacity: 1 }} // animate to ..
             transition={{ opacity: 1 }} // seconds
           >
-            Welcome to Space
+            React Frame introduce
           </motion.h1>
           <motion.p
             variants={fadeLeft}
@@ -115,7 +123,7 @@ const Hero = () => {
             animate="visible"
             transition={{ duration: 1 }}
           >
-            Journey to the unknown
+            Watch for the affects
           </motion.p>
           <Button
             whileHover={{ scale: 1.05 }}
