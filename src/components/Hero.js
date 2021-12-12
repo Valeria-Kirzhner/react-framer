@@ -39,6 +39,19 @@ const ColumnLeft = styled.div`
     font-size: 4rem;
     line-height: 1.1;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 5px;
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    p {
+      margin: 2rem 0;
+      font-size: 3rem;
+      line-height: 1.1;
+    }
+  }
 `;
 //motion.button is adding button tag insude the Button component.
 const Button = styled(motion.button)`
